@@ -27,6 +27,11 @@ nav {
     margin-top: 10px;
 }
 
+nav a:hover {
+    color: #e6a89e;
+    transform: scale(1.1);
+}
+
 nav a {
     color:#fdfbf7;
     text-decoration: none;
@@ -141,12 +146,66 @@ footer a i.fa-instagram {
 }
 
 footer a i.fa-instagram:hover {
-    color: #fff;
+    color: #e6a89e;
     transform: scale(1.15);
 }
 
 .fa:hover {
-    color: #fff;
+    color: #e6a89e;
     transform: scale(1.1);
 }
 
+footer a {
+  color:#8b1c3b;          /* cor dos ícones */
+  margin: 0 10px;        /* espaço entre eles */
+  font-size: 50px;       /* tamanho do ícone */
+  text-decoration: none; /* remove sublinhado */
+}
+
+
+.equipe-section {
+    background-color: #8b1c3b; /* cor de fundo da seção */
+    color: #fff;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.equipe-section h2 {
+    font-size: 3rem;
+    margin-bottom: 50px;
+    font-family: 'Georgia', serif;
+}
+
+.equipe-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px; /* espaçamento entre os membros */
+}
+
+.membro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 200px;
+    text-align: center;
+}
+
+.membro img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%; /* deixa a foto circular */
+    object-fit: cover;
+    border: 3px solid #e6a89e; /* borda opcional */
+    margin-bottom: 15px;
+}
+
+.membro h3 {
+    font-size: 1.2rem;
+    margin-bottom: 5px;
+}
+
+.membro p {
+    font-size: 0.95rem;
+    color: #e6a89e; /* cor dos cargos */
+}

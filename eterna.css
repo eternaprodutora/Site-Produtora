@@ -24,6 +24,12 @@ nav {
     gap: 30px;
     padding: 10px 0;
     margin-top: 10px;
+
+}
+
+nav a:hover {
+    color: #e6a89e;
+    transform: scale(1.1);
 }
 
 nav a {
@@ -146,6 +152,14 @@ footer a i.fa-instagram:hover {
     color: #fff;
     transform: scale(1.1);
 }
+
+footer a {
+  color: #e6a89e;          /* cor dos ícones */
+  margin: 0 10px;        /* espaço entre eles */
+  font-size: 50px;       /* tamanho do ícone */
+  text-decoration: none; /* remove sublinhado */
+}
+
 
 
 

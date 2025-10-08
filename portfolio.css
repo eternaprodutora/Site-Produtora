@@ -12,7 +12,7 @@ header {
     padding: 20px 0 0 0;
 }
 
-header h1{
+header h1 {
     margin: 0;
     font-size: 2.5rem;
     letter-spacing: 2px;
@@ -25,6 +25,11 @@ nav {
     gap: 30px;
     padding: 10px 0;
     margin-top: 10px;
+}
+
+nav a:hover {
+    color: #e6a89e;
+    transform: scale(1.1);
 }
 
 nav a {
@@ -48,7 +53,14 @@ nav a {
 .conteudoprin h2 {
     font-size: 2rem;
     margin-bottom: 10px;
-    color:#8b1c3b;
+    color: #8b1c3b;
+    text-align: center;
+}
+
+.conteudoprin h1 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    color: #8b1c3b;
     text-align: center;
 }
 
@@ -68,28 +80,28 @@ aside {
     flex: 1;
 }
 
-aside h3{
+aside h3 {
     font-size: 1.1rem;
     margin-bottom: 10px;
     color: #8b1c3b;
     text-transform: uppercase;
 }
 
-aside ul{
+aside ul {
     list-style: none;
     padding: 0;
 }
 
-aside ul li{
+aside ul li {
     margin-bottom: 8px;
 }
 
-aside ul li a{
+aside ul li a {
     text-decoration: none;
     color: #4a1c2f
 }
 
-.galeria{
+.galeria {
     width: 100%;
     height: 150px;
     background-color: #e6a89e;
@@ -104,7 +116,8 @@ footer {
     margin-top: 40px;
     display: flex;
     flex-direction: column;
-    align-items: center; /* centraliza tudo */
+    align-items: center;
+    /* centraliza tudo */
     justify-content: center;
 }
 
@@ -124,7 +137,8 @@ footer p {
 
 /* 🔹 Logo maior e centralizada */
 .logo-eterna {
-    width: 200px; /* ajuste o tamanho como quiser */
+    width: 200px;
+    /* ajuste o tamanho como quiser */
     height: auto;
     margin: 20px 0;
     display: block;
@@ -133,7 +147,8 @@ footer p {
 /* 🔹 Ícone do Instagram */
 /* 🔹 Ícone do Instagram maior e centralizado no rodapé */
 footer a i.fa-instagram {
-    font-size: 50px !important; /* aumenta o tamanho */
+    font-size: 50px !important;
+    /* aumenta o tamanho */
     color: #e6a89e;
     margin-top: 20px;
     transition: transform 0.3s ease, color 0.3s ease;
@@ -150,4 +165,154 @@ footer a i.fa-instagram:hover {
     transform: scale(1.1);
 }
 
+footer a {
+  color: #e6a89e;          /* cor dos ícones */
+  margin: 0 10px;        /* espaço entre eles */
+  font-size: 50px;       /* tamanho do ícone */
+  text-decoration: none; /* remove sublinhado */
+}
 
+
+
+
+
+
+
+
+
+/* 🔹 Card do episódio do podcast */
+.card-episodio {
+    background-color: #fff5f3;
+    border: 2px solid #e6a89e;
+    border-radius: 15px;
+    padding: 25px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card-episodio:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+.card-episodio h1 {
+    color: #8b1c3b;
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+}
+
+.card-episodio p {
+    color: #4a1c2f;
+    line-height: 1.6;
+    margin-bottom: 10px;
+}
+
+/* 🔹 Player de áudio estilizado */
+.card-episodio audio {
+    width: 100%;
+    margin-top: 15px;
+    border-radius: 10px;
+}
+
+/* 🔹 Botão opcional */
+.btn-episodio {
+    display: inline-block;
+    background-color: #8b1c3b;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 8px;
+    text-decoration: none;
+    margin-top: 15px;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.btn-episodio:hover {
+    background-color: #a53d5e;
+    transform: scale(1.05);
+}
+
+
+
+
+/* === Carrossel de imagens === */
+.carousel {
+    width: 100%;
+    max-width: 700px;
+    height: 400px;
+    margin: 40px auto;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+.credito-foto {
+    font-size: 0.9rem;
+    color: #000000;
+    margin-bottom: 300px;
+    font-style: italic;
+}
+
+
+.slides {
+    display: flex;
+    width: 300%;
+    transition: transform 0.8s ease;
+}
+
+.slide {
+    width: 100%;
+    flex-shrink: 0;
+}
+
+.slide img {
+    width: 35%;
+    height: 600px;
+    object-fit: cover;
+}
+
+/* Esconde os inputs */
+input[type="radio"] {
+    display: none;
+}
+
+/* Movimento do carrossel */
+#img-1:checked~.first {
+    margin-left: 0;
+}
+
+#img-2:checked~.first {
+    margin-left: -100%;
+}
+
+#img-3:checked~.first {
+    margin-left: -200%;
+}
+
+#img-4:checked~.first {
+    margin-left: -300%;
+}
+
+/* Botões manuais */
+.navigation-manual {
+    position: absolute;
+    width: 100%;
+    bottom: 15px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.manual-btn {
+    border: 2px solid #fff;
+    padding: 7px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.manual-btn:hover {
+    background-color: #e6a89e;
+}
