@@ -316,3 +316,49 @@ input[type="radio"] {
 .manual-btn:hover {
     background-color: #e6a89e;
 }
+
+
+
+
+
+/* 🔹 Estilo do link do Spotify dentro do card */
+.spotify-link {
+    background-color: #a53d5e;  /* Cor do fundo do Spotify */
+    color: white;
+    padding: 15px;
+    border-radius: 10px;
+    margin-top: 20px;  /* Espaçamento acima */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* 🔹 Efeito de hover */
+.spotify-link:hover {
+    transform: translateY(-5px);  /* Eleva o bloco quando passar o mouse */
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);  /* Aumenta a sombra */
+}
+
+/* 🔹 Estilização do ícone do Spotify */
+.spotify-link i {
+    font-size: 30px;
+    margin-right: 10px;  /* Espaço entre o ícone e o texto */
+}
+
+/* 🔹 Estilização do link dentro do bloco */
+.spotify-link a {
+    color:#fff;
+    font-weight: bold;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 10px;  /* Distância entre o ícone e o texto */
+}
+
+.spotify-link a:hover {
+    color:#1DB954;
+;
+}
