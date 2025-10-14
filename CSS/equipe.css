@@ -1,0 +1,276 @@
+body {
+    margin: 0;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: #8b1c3b;
+    color: #fdfbf7;
+}
+
+header {
+    background-color: #fdfbf7;
+    color: #8b1c3b;
+    text-align: center;
+    padding: 20px 0 0 0;
+}
+
+header h1{
+    margin: 0;
+    font-size: 2.5rem;
+    letter-spacing: 2px;
+}
+
+nav {
+    background-color:#8b1c3b;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding: 10px 0;
+    margin-top: 10px;
+}
+
+nav a:hover {
+    color: #e6a89e;
+    transform: scale(1.1);
+}
+
+nav a {
+    color:#fdfbf7;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.container {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 0 20px;
+    display: flex;
+    gap: 40px;
+}
+
+.conteudoprin {
+    flex: 3;
+}
+
+.conteudoprin h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    color:#fdfbf7
+}
+
+.conteudoprin p {
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.conteudoprin a {
+    color: #8b1c3b;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+
+
+
+footer {
+    background-color: #fdfbf7;
+    color: #8b1c3b;
+    text-align: center;
+    padding: 40px 20px;
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* centraliza tudo */
+    justify-content: center;
+}
+
+footer::before {
+    content: "";
+    display: block;
+    width: 80%;
+    height: 1px;
+    background-color: #e6a89e;
+    margin-bottom: 20px;
+}
+
+footer p {
+    margin: 15px 0;
+    font-style: italic;
+}
+
+/* 🔹 Logo maior e centralizada */
+.logo-eterna {
+    width: 200px; /* ajuste o tamanho como quiser */
+    height: auto;
+    margin: 20px 0;
+    display: block;
+}
+
+/* 🔹 Ícone do Instagram */
+/* 🔹 Ícone do Instagram maior e centralizado no rodapé */
+footer a i.fa-instagram {
+    font-size: 50px !important; /* aumenta o tamanho */
+    color: #8b1c3b;
+    margin-top: 20px;
+    transition: transform 0.3s ease, color 0.3s ease;
+    display: inline-block;
+}
+
+footer a i.fa-instagram:hover {
+    color: #e6a89e;
+    transform: scale(1.15);
+}
+
+.fa:hover {
+    color: #e6a89e;
+    transform: scale(1.1);
+}
+
+footer a {
+  color:#8b1c3b;          /* cor dos ícones */
+  margin: 0 10px;        /* espaço entre eles */
+  font-size: 50px;       /* tamanho do ícone */
+  text-decoration: none; /* remove sublinhado */
+}
+footer .endereco {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  color:  #8b1c3b;
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+footer .endereco i {
+  color:  #8b1c3b;
+  font-size: 18px;
+}
+
+
+
+
+
+.equipe-section {
+    background-color: #8b1c3b; /* cor de fundo da seção */
+    color: #fff;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.equipe-section h2 {
+    font-size: 3rem;
+    margin-bottom: 50px;
+    font-family: 'Georgia', serif;
+}
+
+.equipe-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px; /* espaçamento entre os membros */
+}
+
+.membro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 200px;
+    text-align: center;
+}
+
+.membro img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%; /* deixa a foto circular */
+    object-fit: cover;
+    border: 3px solid #e6a89e; /* borda opcional */
+    margin-bottom: 15px;
+}
+
+.membro h3 {
+    font-size: 1.2rem;
+    margin-bottom: 5px;
+}
+
+.membro p {
+    font-size: 0.95rem;
+    color: #e6a89e; /* cor dos cargos */
+}
+.membro img:hover {
+  transform: scale(1.1); /* aumenta um pouco quando passa o mouse */
+  box-shadow: 0 4px 70px rgba(255, 255, 255, 0.3); /* adiciona um leve brilho/sombra */
+  border-color: #fff; /* opcional: muda a cor da borda no hover */
+}
+
+
+
+
+
+
+
+
+
+
+/* CARD DETALHE */
+.card-detalhe {
+  display: none; /* fica invisível até clicar */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+
+.card-conteudo {
+  background: #fdfbf7;
+  color: #4a1c2f;
+  width: 90%;
+  max-width: 400px;
+  border-radius: 15px;
+  text-align: center;
+  padding: 25px;
+  position: relative;
+  animation: fadeIn 0.4s ease;
+}
+
+.card-conteudo img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 15px;
+  border: 3px solid #8b1c3b;
+}
+
+.card-conteudo h3 {
+  color: #8b1c3b;
+  margin-bottom: 10px;
+}
+
+.card-conteudo a {
+  color: #8b1c3b;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.card-conteudo a:hover {
+  color: #a53d5e;
+}
+
+.fechar {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  font-size: 30px;
+  cursor: pointer;
+  color: #8b1c3b;
+  font-weight: bold;
+}
+
+@keyframes fadeIn {
+  from {opacity: 0; transform: scale(0.9);}
+  to {opacity: 1; transform: scale(1);}
+}

@@ -16,17 +16,127 @@
 
     <header class="menu">
         <nav>
-           <a href="index.html">INÍCIO</a>
+            <a href="index.html">INÍCIO</a>
+            <a href="sobrenos.html">NOSSA IDENTIDADE</a>
             <a href="portfolio.html">PORTFÓLIO</a>
-            <a href="sobrenos.html">SOBRE NÓS</a>
-            <a href="mivi.html">MIVI</a>
+            <a href="equipe.html">EQUIPE</a>
             <a href="extras.html">EXTRAS</a>
         </nav>
     </header>
 
+    <section class="carrossel-filmes">
+  <h2>🎬 Indicações da Equipe ETERNA</h2>
+  <div class="carousel-container">
+    <div class="carousel-track">
 
+      <!-- Card 1 -->
+      <div class="filme-card">
+        <img src="IMG/FILMES/bastardos.png" alt="Bastardos Inglórios">
+        <h3>Bastardos Inglórios (2009)</h3>
+        <p><strong>Indicado por:</strong> Pedro Bellini</p>
+        <p class="descricao"></p>
+      </div>
 
+      <!-- Card 2 -->
+      <div class="filme-card">
+        <img src="IMG/FILMES/ghost.png" alt="Ghost">
+        <h3>Ghost: Do Outro Lado da Vida (1990)</h3>
+        <p><strong>Indicado por:</strong> Ana Márcia</p>
+        <p class="descricao"></p>
+      </div>
 
+      <!-- Card 3 -->
+      <div class="filme-card">
+        <img src="IMG/FILMES/superman.png" alt="Superman: O Filme (1978)">
+        <h3>Superman: O Filme (1978)</h3>
+        <p><strong>Indicado por:</strong> Ronald Santos</p>
+        <p class="descricao">Um retrato intenso da realidade brasileira, contado com maestria visual e narrativa poderosa.</p>
+      </div>
+
+      <!-- Card 4 -->
+      <div class="filme-card">
+        <img src="IMG/FILMES/amelie.png" alt="O fabuloso destino de Amélie Poulain">
+        <h3>O fabuloso destino de Amélie Poulain (2001)</h3>
+        <p><strong>Indicado por:</strong> Eduarda Valverde</p>
+        <p class="descricao"></p>
+      </div>
+
+      <!-- Card 5 -->
+      <div class="filme-card">
+        <img src="IMG/FILMES/frances.png" alt="Frances">
+        <h3>Frances Ha (2012)</h3>
+        <p><strong>Indicado por:</strong> Isabelly Mesquita</p>
+        <p class="descricao"></p>
+      </div>
+
+      <!-- Card 6 -->
+      <div class="filme-card">
+        <img src="IMG/FILMES/interestelar.png" alt="Interestelar">
+        <h3>Interestelar (2014)</h3>
+        <p><strong>Indicado por:</strong> Pedro Flauzino</p>
+        <p class="descricao"></p>
+      </div>
+
+      <!-- Card 7 -->
+      <div class="filme-card">
+        <img src="IMG/FILMES/kimi.png" alt="Kimi">
+        <h3>Kimi no na wa (Your Name) (2016)</h3>
+        <p><strong>Indicado por:</strong> Yasmim Cabral</p>
+        <p class="descricao"></p>
+      </div>
+
+      <!-- Card 8 -->
+      <div class="filme-card">
+        <img src="IMG/FILMES/crepusculo.png" alt="crepusculo">
+        <h3>A Saga Crepúsculo: Lua Nova (2009)</h3>
+        <p><strong>Indicado por:</strong> Fábio Cardoso</p>
+        <p class="descricao"></p>
+      </div>
+
+       <!-- Card 9 -->
+      <div class="filme-card">
+        <img src="IMG/FILMES/comedia.png" alt="comedia">
+        <h3> Uma Comédia de Erros (1996)</h3>
+        <p><strong>Indicado por:</strong> Caio Lopes </p>
+        <p class="descricao"></p>
+      </div>
+
+      <!-- Card 10 -->
+      <div class="filme-card">
+        <img src="IMG/FILMES/big.png" alt="big">
+        <h3> Quero ser grande (Big) (1988)</h3>
+        <p><strong>Indicado por:</strong> Cristiano Pereira </p>
+        <p class="descricao"></p>
+      </div>
+
+      <!-- Card 11 -->
+      <div class="filme-card">
+        <img src="IMG/FILMES/rei.png" alt="rei">
+        <h3> O Rei do Show (2017) </h3>
+        <p><strong>Indicado por:</strong> Maria Eduarda Mota </p>
+        <p class="descricao"></p>
+      </div>
+
+      
+      <!-- Card 12 -->
+      <div class="filme-card">
+        <img src="IMG/FILMES/viajo.png" alt="viajo">
+        <h3> Viajo Porque Preciso, Volto Porque te Amo (2009)</h3>
+        <p><strong>Indicado por:</strong> Guilherme Fernandes </p>
+        <p class="descricao"></p>
+      </div>
+
+      
+
+    </div>
+  </div>
+
+  <!-- Botões de navegação -->
+  <div class="carousel-nav">
+    <button class="prev">&#10094;</button>
+    <button class="next">&#10095;</button>
+  </div>
+</section>
 
 
     <footer>
@@ -43,14 +153,33 @@
                 <i class="fa fa-spotify"></i>
             </a>
         </div>
-        <div class="endereco">
+         <div class="endereco">
             <p><strong>Universidade Cruzeiro do Sul -</strong></p>
-            <i class="fa fa-map-marker"></i>
-            <p>Rua XXXXXXXXXXXXX, XX - XXXXXXXXX, SP</p>
+           <a class="fa fa-map-marker" href="https://maps.app.goo.gl/MnUiGKuXuuueFQ5XA"></i></a>
+            <p>R. Galvão Bueno, 868 - Liberdade, São Paulo - SP, 01506-000</p>
         </div>
         <br></br>
         <p>© 2025 Produtora Eterna. Todos os direitos reservados.</p>
     </footer>
 </body>
+
+<script>
+  const track = document.querySelector('.carousel-track');
+  const nextButton = document.querySelector('.next');
+  const prevButton = document.querySelector('.prev');
+  let index = 0;
+
+  nextButton.addEventListener('click', () => {
+    const cards = document.querySelectorAll('.filme-card').length;
+    index = (index + 1) % cards;
+    track.style.transform = `translateX(-${index * 700}px)`;
+  });
+
+  prevButton.addEventListener('click', () => {
+    const cards = document.querySelectorAll('.filme-card').length;
+    index = (index - 1 + cards) % cards;
+    track.style.transform = `translateX(-${index * 300}px)`;
+  });
+</script>
 
 </html>
