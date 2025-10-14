@@ -1,0 +1,350 @@
+body {
+    margin: 0;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color:#fdfbf7;
+    color: #4a1c2f;
+}
+
+header {
+    background-color: #8b1c3b;
+    color: #fdfbf7;
+    text-align: center;
+    padding: 20px 0 0 0;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+    letter-spacing: 2px;
+}
+
+nav {
+    background-color: #fdfbf7;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding: 10px 0;
+    margin-top: 10px;
+}
+
+nav a:hover {
+    color: #e6a89e;
+    transform: scale(1.1);
+}
+
+nav a {
+    color: #8b1c3b;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.container {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 0 20px;
+    display: flex;
+    gap: 40px;
+}
+
+.conteudoprin {
+    flex: 3;
+}
+
+.conteudoprin h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    color: #8b1c3b;
+    text-align: center;
+}
+
+.conteudoprin h1 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    color: #8b1c3b;
+    text-align: center;
+}
+
+.conteudoprin p {
+    line-height: 1.6;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.conteudoprin a {
+    color: #8b1c3b;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+
+
+/*rodape*/
+footer {
+    background-color: #8b1c3b;
+    color: white;
+    text-align: center;
+    padding: 40px 20px;
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* centraliza tudo */
+    justify-content: center;
+}
+
+footer::before {
+    content: "";
+    display: block;
+    width: 80%;
+    height: 1px;
+    background-color: #e6a89e;
+    margin-bottom: 20px;
+}
+
+footer p {
+    margin: 15px 0;
+    font-style: italic;
+}
+
+/* 🔹 Logo maior e centralizada */
+.logo-eterna {
+    width: 200px;
+    /* ajuste o tamanho como quiser */
+    height: auto;
+    margin: 20px 0;
+    display: block;
+}
+
+/* 🔹 Ícone do Instagram */
+/* 🔹 Ícone do Instagram maior e centralizado no rodapé */
+footer a i.fa-instagram {
+    font-size: 50px !important;
+    /* aumenta o tamanho */
+    color: #e6a89e;
+    margin-top: 20px;
+    transition: transform 0.3s ease, color 0.3s ease;
+    display: inline-block;
+}
+
+footer a i.fa-instagram:hover {
+    color: #fff;
+    transform: scale(1.15);
+}
+
+.fa:hover {
+    color: #fff;
+    transform: scale(1.1);
+}
+
+footer a {
+  color: #e6a89e;          /* cor dos ícones */
+  margin: 0 10px;        /* espaço entre eles */
+  font-size: 50px;       /* tamanho do ícone */
+  text-decoration: none; /* remove sublinhado */
+}
+
+footer .endereco {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  color: #fdfbf7;
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+footer .endereco i {
+  color: #fdfbf7;
+  font-size: 18px;
+}
+
+
+
+
+
+
+
+
+
+/* 🔹 Card do episódio do podcast */
+.card-episodio {
+    background-color: #fff5f3;
+    border: 2px solid #e6a89e;
+    border-radius: 15px;
+    padding: 25px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card-episodio:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+.card-episodio h1 {
+    color: #8b1c3b;
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+}
+
+.card-episodio p {
+    color: #4a1c2f;
+    line-height: 1.6;
+    margin-bottom: 10px;
+}
+
+/* 🔹 Player de áudio estilizado */
+.card-episodio audio {
+    width: 100%;
+    margin-top: 15px;
+    border-radius: 10px;
+}
+
+/* 🔹 Botão opcional */
+.btn-episodio {
+    display: inline-block;
+    background-color: #8b1c3b;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 8px;
+    text-decoration: none;
+    margin-top: 15px;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.btn-episodio:hover {
+    background-color: #a53d5e;
+    transform: scale(1.05);
+}
+
+
+
+
+/* === Carrossel de imagens === */
+.carousel {
+    width: 100%;
+    max-width: 700px;
+    height: 400px;
+    margin: 40px auto;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+.credito-foto {
+    font-size: 0.9rem;
+    color: #000000;
+    margin-bottom: 300px;
+    font-style: italic;
+}
+
+
+.slides {
+    display: flex;
+    width: 300%;
+    transition: transform 0.8s ease;
+}
+
+.slide {
+    width: 100%;
+    flex-shrink: 0;
+}
+
+.slide img {
+    width: 35%;
+    height: 600px;
+    object-fit: cover;
+}
+
+/* Esconde os inputs */
+input[type="radio"] {
+    display: none;
+}
+
+/* Movimento do carrossel */
+#img-1:checked~.first {
+    margin-left: 0;
+}
+
+#img-2:checked~.first {
+    margin-left: -100%;
+}
+
+#img-3:checked~.first {
+    margin-left: -200%;
+}
+
+#img-4:checked~.first {
+    margin-left: -300%;
+}
+
+/* Botões manuais */
+.navigation-manual {
+    position: absolute;
+    width: 100%;
+    bottom: 15px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.manual-btn {
+    border: 2px solid #fff;
+    padding: 7px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.manual-btn:hover {
+    background-color: #e6a89e;
+}
+
+
+
+
+
+/* 🔹 Estilo do link do Spotify dentro do card */
+.spotify-link {
+    background-color: #a53d5e;  /* Cor do fundo do Spotify */
+    color: white;
+    padding: 15px;
+    border-radius: 10px;
+    margin-top: 20px;  /* Espaçamento acima */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* 🔹 Efeito de hover */
+.spotify-link:hover {
+    transform: translateY(-5px);  /* Eleva o bloco quando passar o mouse */
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);  /* Aumenta a sombra */
+}
+
+/* 🔹 Estilização do ícone do Spotify */
+.spotify-link i {
+    font-size: 30px;
+    margin-right: 10px;  /* Espaço entre o ícone e o texto */
+}
+
+/* 🔹 Estilização do link dentro do bloco */
+.spotify-link a {
+    color:#fff;
+    font-weight: bold;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 10px;  /* Distância entre o ícone e o texto */
+}
+
+.spotify-link a:hover {
+    color:#1DB954;
+;
+}
