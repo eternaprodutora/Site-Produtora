@@ -1,6 +1,21 @@
+/*fonte*/
+@font-face {
+  font-family: 'Sage';
+  src: url('FONTS/Sage.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Lato';
+  src: url('FONTS/Lato-Medium.ttf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
 body {
     margin: 0;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: 'Lato', sans-serif;
     background-color:#fdfbf7;
     color: #4a1c2f;
 }
@@ -16,6 +31,7 @@ header h1 {
     margin: 0;
     font-size: 2.5rem;
     letter-spacing: 2px;
+    font-family: 'Sage', sans-serif;
 }
 
 nav {
@@ -55,6 +71,7 @@ nav a {
     margin-bottom: 10px;
     color: #8b1c3b;
     text-align: center;
+    font-family: 'Sage', sans-serif;
 }
 
 .conteudoprin h1 {
@@ -62,6 +79,7 @@ nav a {
     margin-bottom: 10px;
     color: #8b1c3b;
     text-align: center;
+    font-family: 'Sage', sans-serif;
 }
 
 .conteudoprin p {

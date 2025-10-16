@@ -1,6 +1,21 @@
+/*fonte*/
+@font-face {
+  font-family: 'Sage';
+  src: url('FONTS/Sage.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Lato';
+  src: url('FONTS/Lato-Medium.ttf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
 body {
     margin: 0;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: 'Lato', sans-serif;
     background-color: #fdfbf7;
     color: #4a1c2f;
 }
@@ -15,6 +30,7 @@ header h1{
     margin: 0;
     font-size: 2.5rem;
     letter-spacing: 2px;
+    font-family: 'Sage', sans-serif;
 }
 
 nav {
@@ -54,6 +70,7 @@ nav a {
     font-size: 2rem;
     margin-bottom: 10px;
     color:#8b1c3b;
+    font-family: 'Sage', sans-serif;
 }
 
 .conteudoprin p {
@@ -171,6 +188,7 @@ footer .endereco i {
 .cards h2 {
     color: #ffffff;
     margin-bottom: 10px;
+    font-family: 'Sage', sans-serif;
 }
 
 .cards p {
@@ -185,4 +203,83 @@ footer .endereco i {
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
     background-color:  #e6a89e;
     color:#8b1c3b;
+}
+
+
+
+
+/*IMAGENS*/
+/* === Carrossel de imagens === */
+.carousel {
+    width: 100%;
+    max-width: 900px;
+    height: 600px;
+    margin: 40px auto;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+
+
+.slides {
+    display: flex;
+    width: 300%;
+    transition: transform 0.8s ease;
+}
+
+.slide {
+    width: 100%;
+    flex-shrink: 0;
+}
+
+.slide img {
+    width: 35%;
+    height: 600px;
+    object-fit: cover;
+}
+
+/* Esconde os inputs */
+input[type="radio"] {
+    display: none;
+}
+
+/* Movimento do carrossel */
+#img-1:checked~.first {
+    margin-left: 0;
+}
+
+#img-2:checked~.first {
+    margin-left: -100%;
+}
+
+#img-3:checked~.first {
+    margin-left: -200%;
+}
+
+#img-4:checked~.first {
+    margin-left: -300%;
+}
+
+/* Botões manuais */
+.navigation-manual {
+    position: absolute;
+    width: 100%;
+    bottom: 15px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.manual-btn {
+    border: 2px solid #fff;
+    padding: 7px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.manual-btn:hover {
+    background-color: #e6a89e;
 }
