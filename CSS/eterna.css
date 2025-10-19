@@ -1,15 +1,16 @@
 /*fonte*/
 @font-face {
-  font-family: 'Sage';
-  src: url('FONTS/SageRegular.woff2') format('opentype');
-  font-weight: normal;
-  font-style: normal;
+    font-family: 'Sage';
+    src: url('FONTS/SageRegular.woff2') format('opentype');
+    font-weight: normal;
+    font-style: normal;
 }
+
 @font-face {
-  font-family: 'Lato';
-  src: url('FONTS/Lato-Medium.ttf') format('opentype');
-  font-weight: normal;
-  font-style: normal;
+    font-family: 'Lato';
+    src: url('FONTS/Lato-Medium.ttf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
 }
 
 
@@ -19,6 +20,7 @@ body {
     background-color: #fdfbf7;
     color: #4a1c2f;
 }
+
 header {
     background-color: #8b1c3b;
     color: #fdfbf7;
@@ -26,11 +28,14 @@ header {
     padding: 20px 0 0 0;
 }
 
-header h1{
+header h1 {
     margin: 0;
     font-size: 2.5rem;
     letter-spacing: 2px;
-    font-family: 'Sage', sans-serif;
+    font-family: 'Sage', serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
 }
 
 nav {
@@ -69,8 +74,11 @@ nav a {
 .conteudoprin h2 {
     font-size: 2rem;
     margin-bottom: 10px;
-    color:#8b1c3b;
-    font-family: 'Sage', sans-serif;
+    color: #8b1c3b;
+    font-family: 'Sage',serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
 }
 
 .conteudoprin p {
@@ -93,7 +101,8 @@ footer {
     margin-top: 40px;
     display: flex;
     flex-direction: column;
-    align-items: center; /* centraliza tudo */
+    align-items: center;
+    /* centraliza tudo */
     justify-content: center;
 }
 
@@ -113,7 +122,8 @@ footer p {
 
 /* 🔹 Logo maior e centralizada */
 .logo-eterna {
-    width: 200px; /* ajuste o tamanho como quiser */
+    width: 200px;
+    /* ajuste o tamanho como quiser */
     height: auto;
     margin: 20px 0;
     display: block;
@@ -122,7 +132,8 @@ footer p {
 /* 🔹 Ícone do Instagram */
 /* 🔹 Ícone do Instagram maior e centralizado no rodapé */
 footer a i.fa-instagram {
-    font-size: 50px !important; /* aumenta o tamanho */
+    font-size: 50px !important;
+    /* aumenta o tamanho */
     color: #e6a89e;
     margin-top: 20px;
     transition: transform 0.3s ease, color 0.3s ease;
@@ -140,25 +151,29 @@ footer a i.fa-instagram:hover {
 }
 
 footer a {
-  color: #e6a89e;          /* cor dos ícones */
-  margin: 0 10px;        /* espaço entre eles */
-  font-size: 50px;       /* tamanho do ícone */
-  text-decoration: none; /* remove sublinhado */
+    color: #e6a89e;
+    /* cor dos ícones */
+    margin: 0 10px;
+    /* espaço entre eles */
+    font-size: 50px;
+    /* tamanho do ícone */
+    text-decoration: none;
+    /* remove sublinhado */
 }
 
 footer .endereco {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 8px;
-  color: #fdfbf7;
-  font-size: 14px;
-  margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    color: #fdfbf7;
+    font-size: 14px;
+    margin-top: 10px;
 }
 
 footer .endereco i {
-  color: #fdfbf7;
-  font-size: 18px;
+    color: #fdfbf7;
+    font-size: 18px;
 }
 
 
@@ -174,7 +189,7 @@ footer .endereco i {
     margin-top: 40px;
 }
 
-.cards > div {
+.cards>div {
     flex: 1;
     min-width: 250px;
     max-width: 300px;
@@ -197,12 +212,12 @@ footer .endereco i {
 }
 
 /* Efeito de hover opcional */
-.cards > div:hover {
+.cards>div:hover {
     transform: translateY(-5px);
     transition: all 0.3s ease;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
-    background-color:  #e6a89e;
-    color:#8b1c3b;
+    background-color: #e6a89e;
+    color: #8b1c3b;
 }
 
 
