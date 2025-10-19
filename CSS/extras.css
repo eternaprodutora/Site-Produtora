@@ -192,6 +192,54 @@ nav a {
 
 
 
+/*Indicação do Entrevistado*/
+.filme-card-entrevistado {
+  flex: 0 0 auto;
+  background-color: #fff;
+  border: 2px solid #e6a89e;
+  border-radius: 15px;
+  width: 280px;
+  margin: 20px auto; /* centraliza horizontalmente */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  padding: 15px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.filme-card-entrevistado:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 25px rgba(0, 0, 0, 0.15);
+}
+
+.filme-card-entrevistado img {
+  width: 100%;
+  max-height: 300px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+.filme-card-entrevistado h3 {
+  color: #8b1c3b;
+  font-size: 1.4rem;
+  margin-bottom: 5px;
+  font-family: 'Sage', sans-serif;
+
+}
+
+.filme-card-entrevistado p {
+  font-size: 0.95rem;
+  line-height: 1.4;
+}
+
+.filme-card-entrevistado .descricao {
+  font-style: italic;
+  color: #6e2a3c;
+}
+
+
 
 
 

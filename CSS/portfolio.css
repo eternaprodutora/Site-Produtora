@@ -55,11 +55,13 @@ nav a {
 }
 
 .container {
-    max-width: 900px;
+    display: flex;
+    flex-wrap: wrap; /* Permite que os cards quebrem para a linha seguinte se não houver espaço */
+    gap: 40px;  /* Espaçamento entre os cards */
+    justify-content: space-between;  /* Alinha os itens na linha */
+    max-width: 1000px;  /* Limita o tamanho máximo da largura */
     margin: 40px auto;
     padding: 0 20px;
-    display: flex;
-    gap: 40px;
 }
 
 .conteudoprin {
@@ -193,6 +195,14 @@ footer .endereco i {
     box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
     margin-top: 20px;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    flex: 1 1 45%; /* Aumenta a flexibilidade, 45% é a largura máxima dos cards */
+    min-width: 300px; /* Define um tamanho mínimo para os cards */
+}
+
+@media (max-width: 768px) {
+    .card-episodio {
+        flex: 1 1 100%; /* Se a tela for pequena, faz os cards ficarem em linha única */
+    }
 }
 
 .card-episodio:hover {
@@ -212,12 +222,7 @@ footer .endereco i {
     margin-bottom: 10px;
 }
 
-/* 🔹 Player de áudio estilizado */
-.card-episodio audio {
-    width: 100%;
-    margin-top: 15px;
-    border-radius: 10px;
-}
+
 
 /* 🔹 Botão opcional */
 .btn-episodio {
@@ -271,9 +276,24 @@ footer .endereco i {
     flex-shrink: 0;
 }
 
+
+
 .slide img {
     width: 35%;
     height: 600px;
+    object-fit: cover;
+}
+
+.slide-dois{
+    width: 100%;
+    flex-shrink: 0;
+}
+
+
+
+.slide-dois img {
+    width: 35%;
+    height: 500px;
     object-fit: cover;
 }
 
@@ -322,6 +342,20 @@ input[type="radio"] {
 }
 
 
+/*IMAGEM SEGUNDO CARD*/
+.imgepdois{
+    width: 70%;
+    margin-top:20px;
+    max-width: 700px;
+    height: 400px;
+    margin: 40px auto;
+    border-radius: 10px;
+    overflow: hidden;
+    position: center;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    position: relative;
+}
+
 
 
 
@@ -364,7 +398,6 @@ input[type="radio"] {
 
 .spotify-link a:hover {
     color:#1DB954;
-;
 }
 
 
